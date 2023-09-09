@@ -52,6 +52,7 @@ class DownloadButton extends StatelessWidget {
                     fontSize: device.isNotMobile ? 18 : 16,
                     fontWeight: FontWeight.bold,
                     letterSpacing: -0.5,
+                    color: Colors.black,
                   ),
                   children: [
                     TextSpan(
@@ -60,6 +61,7 @@ class DownloadButton extends StatelessWidget {
                         fontSize: device.isNotMobile ? 18 : 16,
                         fontWeight: FontWeight.w400,
                         letterSpacing: -0.5,
+                        color: Colors.black,
                       ),
                     ),
                   ],

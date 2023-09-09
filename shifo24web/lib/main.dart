@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Shifo24 Demo',
       theme: appThemeData(),
       routes: routes,
-      initialRoute: "/home",
+      initialRoute: "/shifo24",
     );
   }
 }

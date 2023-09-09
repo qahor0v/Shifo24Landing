@@ -4,24 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff0dd61a-5a0d-4a8e-b081-ae507decc351" name="Changes" comment="home info widget added">
-      <change afterPath="$PROJECT_DIR$/lib/src/presentation/screens/app_footer.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/presentation/screens/app_mobile_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/presentation/screens/desktop_tablet_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/presentation/screens/footer.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/repository/models/model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/repository/services/services.dart" afterDir="false" />
+    <list default="true" id="ff0dd61a-5a0d-4a8e-b081-ae507decc351" name="Changes" comment="mobile screens added">
       <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/config/theme/app_colors.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/config/theme/app_colors.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/constants/text/home_texts.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/constants/text/home_texts.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/presentation/home/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/presentation/home/home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/presentation/screens/home_info_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/presentation/screens/home_info_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/presentation/widgets/buttons/download_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/presentation/widgets/buttons/download_button.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/favicon.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +86,21 @@
       <option name="project" value="LOCAL" />
       <updated>1694242751013</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="mobile screens added">
+      <created>1694250461993</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694250461993</updated>
+    </task>
+    <task id="LOCAL-00004" summary="mobile screens added">
+      <created>1694250479050</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694250479050</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -121,6 +123,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="device type functions changed" />
     <MESSAGE value="home info widget added" />
-    <option name="LAST_COMMIT_MESSAGE" value="home info widget added" />
+    <MESSAGE value="mobile screens added" />
+    <option name="LAST_COMMIT_MESSAGE" value="mobile screens added" />
   </component>
 </project>
