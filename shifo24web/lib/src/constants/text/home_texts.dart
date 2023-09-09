@@ -18,4 +18,5 @@ class HomeTexts {
 
   static const String info4 =
       "Vaqtni Tejash\nJoriy jadval tufayli siz o'zingiz uchun qulay vaqtda uchrashuvga yozilishingiz mumkin.";
+
 }
