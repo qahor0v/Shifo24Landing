@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shifo24web/src/config/theme/app_colors.dart';
 import 'package:shifo24web/src/constants/assets/asset_paths.dart';
 import 'package:shifo24web/src/constants/text/fonts.dart';
 import 'package:shifo24web/src/constants/text/home_texts.dart';
-import 'package:shifo24web/src/presentation/widgets/helpers/mouse_region_wrapper.dart';
+import 'package:shifo24web/src/presentation/screens/home_info_screen.dart';
+import 'package:shifo24web/src/presentation/widgets/buttons/download_button.dart';
 import 'package:shifo24web/src/presentation/widgets/helpers/sized_box.dart';
 import 'package:shifo24web/src/repository/utils/device_type.dart';
 
@@ -100,75 +100,98 @@ class Home extends StatelessWidget {
                       )
                     ],
                   ),
+                  HBox(
+                    device.size(mobile: 64, tablet: 120, desktop: 152),
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        //padding: const EdgeInsets.all(40),
+                        decoration: BoxDecoration(
+                          color: appRed50,
+                          borderRadius: BorderRadius.circular(
+                            device.size(mobile: 16, tablet: 24, desktop: 32),
+                          ),
+                        ),
+                        child: Center(
+                          child: Image.asset(
+                            AppAssets.aptechka,
+                            height: device.size(
+                              mobile: 100,
+                              tablet: 200,
+                              desktop: 298,
+                            ),
+                            width: device.size(
+                              mobile: 100,
+                              tablet: 200,
+                              desktop: 298,
+                            ),
+                          ),
+                        ),
+                      ),
+                      WBox(
+                        device.size(mobile: 16, tablet: 32, desktop: 56),
+                      ),
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              HomeTexts.nima,
+                              style: TextStyle(
+                                color: titleColor,
+                                fontSize: 30,
+                                fontFamily: rubikBold,
+                              ),
+                            ),
+                            HBox(12),
+                            const Text(
+                              HomeTexts.nimaTitle,
+                              style: TextStyle(
+                                color: subtitleColor,
+                                fontSize: 22,
+                                fontFamily: rubikRegular,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  HBox(56),
+                  const Text(
+                    HomeTexts.aynan,
+                    style: TextStyle(
+                      color: titleColor,
+                      fontSize: 30,
+                      fontFamily: rubikBold,
+                    ),
+                  ),
+                  HBox(24),
+                  Row(
+                    children: [
+                      const HomeInfoScreen(number: '1', title: HomeTexts.info1),
+                      WBox(36),
+                      const HomeInfoScreen(number: '2', title: HomeTexts.info2),
+                    ],
+                  ),
+                  HBox(20),
+                  Row(
+                    children: [
+                      const HomeInfoScreen(number: '3', title: HomeTexts.info3),
+                      WBox(36),
+                      const HomeInfoScreen(number: '4', title: HomeTexts.info4),
+                    ],
+                  ),
+                  HBox(56),
+                  HBox(56),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
-    );
-  }
-}
-
-class DownloadButton extends StatelessWidget {
-  final void Function() onTap;
-  final String title;
-  final String icon;
-
-  const DownloadButton({
-    super.key,
-    required this.title,
-    required this.icon,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return FocusedWrapper(
-      onTap: onTap,
-      child: (focused) {
-        return AnimatedContainer(
-          padding: const EdgeInsets.symmetric(
-            vertical: 11,
-            horizontal: 15,
-          ),
-          duration: const Duration(microseconds: 200),
-          decoration: BoxDecoration(
-            color: focused ? focusedColor : Colors.transparent,
-            borderRadius: BorderRadius.circular(11),
-            border: Border.all(
-              width: 2,
-              color: borderColor,
-            ),
-          ),
-          child: Row(
-            children: [
-              SvgPicture.asset(icon),
-              WBox(4),
-              RichText(
-                text: TextSpan(
-                  text: title,
-                  style: const TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: -0.5,
-                  ),
-                  children: const [
-                    TextSpan(
-                      text: "dan\nyuklash",
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w400,
-                        letterSpacing: -0.5,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        );
-      },
     );
   }
 }

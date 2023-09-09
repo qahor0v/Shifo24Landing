@@ -3,4 +3,5 @@ abstract class AppAssets {
   static const String homeImage = 'assets/images/23232323.png';
   static const String appStore = 'assets/icons/apple-fill.svg';
   static const String playMarket = 'assets/icons/google-play-fill.svg';
+  static const String aptechka = 'assets/images/566767.png';
 }
