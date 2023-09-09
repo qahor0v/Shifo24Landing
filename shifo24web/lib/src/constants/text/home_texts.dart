@@ -1,7 +1,7 @@
 class HomeTexts {
   static const String title = 'Tibbiy ko’riklar\nyanada qulayroq!';
   static const String subtitle =
-      'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et\nmassa mi. Aliquam in hendrerit urna. ';
+      'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. ';
   static const String nima = "Shifo24 bu nima?";
 
   static const String nimaTitle =
